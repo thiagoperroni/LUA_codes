@@ -1,0 +1,11 @@
+file.open("test.txt","r") 
+xxx1 = (file.readline())
+yyy1 = (file.readline())
+num1  = (file.readline())
+num12 = (file.readline())
+file.close()
+
+print(xxx1)
+print(yyy1)
+print(num1)
+print(num12)

@@ -1,0 +1,15 @@
+--tratando strings
+s = "GET /SSID=CITI-Terreo/SENHA=1cbe991a14/ HTTP/1.1fuhdsigfhrdhgvf"
+print("recebi a string" .. s)
+ini1,ini2 = s:find("GET")
+fim1, fim2=s:find("HTTP")
+ns=s:sub(ini2+2,fim1-2)
+print("essa eh a parte importante" .. ns)
+ini1,ini2 = ns:find("SSID=")
+fim1,fim2 = ns:find("/",ini2)
+ssid=ns:sub(ini2+1,fim2-1)
+print("esse eh o nome da rede: " .. ssid)
+ini1,ini2 = ns:find("SENHA=")
+fim1,fim2 = ns:find("/", ini2)
+pwd=ns:sub(ini2+1,fim2-1)
+print("essa eh a senha: " .. pwd)
