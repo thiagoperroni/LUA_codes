@@ -1,2 +1,2 @@
 # LUA_codes
-códigos em lua compartilhados
+códigos em lua para ESP8266
